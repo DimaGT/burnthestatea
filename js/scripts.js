@@ -1193,7 +1193,7 @@ Function First Load
 		}
 		
 		if ($("#page-content").hasClass("light-content")) {
-			$("nav").css('background-color', '#fafafa');
+			$("nav").css('background-color', '#000');
 			$("main, #main-content.solid-color").css('background-color', function () {
 				return $("#page-content").data('bgcolor')
 			});
@@ -1208,7 +1208,7 @@ Function First Load
 				$("header").css('background-color', 'transparent');
 			}
 		} else {			
-			$("nav").css('background-color', '#fafafa');
+			$("nav").css('background-color', '#000');
 			$("main, #main-content.solid-color").css('background-color', function () {
 				return $("#page-content").data('bgcolor')
 			});
@@ -1764,9 +1764,9 @@ Function Showcase Webgl Slider
 				
 				$('.swiper-container').on('mousedown touchstart', function(event) {
 					if ($('#magic-cursor').hasClass("light-content")) {
-						TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
-					} else {
 						TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
+					} else {
+						TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
 					}
 					$("body" ).addClass("scale-drag-x");
 					timeout = setInterval(function(){        
@@ -1776,7 +1776,7 @@ Function Showcase Webgl Slider
 						if (!$('#magic-cursor').hasClass("light-content")) {
 							$('#magic-cursor').addClass('light-content');
 						}
-						TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+						TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 						$("body" ).addClass("scale-drag-down");
 						TweenMax.to('#slider-webgl', 0.2,{scale: 0.6, delay:0,});
 						TweenMax.to('.swiper-slide', 0.2,{scale: 1, delay:0,});
@@ -2315,9 +2315,9 @@ Function Showcase Slider
 				
 				$('.swiper-container').on('mousedown touchstart', function() {	
 					if ($('#magic-cursor').hasClass("light-content")) {
-						TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
-					} else {
 						TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
+					} else {
+						TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
 					}
 					$("body" ).addClass("scale-drag-y");
 				});
@@ -2428,9 +2428,9 @@ Function Showcase Carousel
 						clickable: true,
 						renderBullet: function (index, className) {
 					  return '<span class="' + className + '">'+'<div class="parallax-wrap">' + '<div class="parallax-element">' + '<svg class="fp-arc-loader" width="20" height="20" viewBox="0 0 20 20">'+
-									'<circle class="path" cx="10" cy="10" r="5.5" fill="none" transform="rotate(-90 10 10)" stroke="#FFF"'+
+									'<circle class="path" cx="10" cy="10" r="5.5" fill="none" transform="rotate(-90 10 10)" stroke="#000"'+
 									'stroke-opacity="1" stroke-width="2px"></circle>'+
-							'<circle cx="10" cy="10" r="3" fill="#FFF"></circle>'+
+							'<circle cx="10" cy="10" r="3" fill="#000"></circle>'+
 									'</svg></div></div></span>';
 					},
 			
@@ -2525,7 +2525,7 @@ Function Showcase Carousel
 				});
 			
 				$('#showcase-carousel-holder .swiper-container').on('mousedown touchstart', function() {
-					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 					$("body" ).addClass("scale-drag-x");				
 				});
 				
@@ -2867,7 +2867,7 @@ Function Portfolio
 			
 			if ($(window).width() >= 1024) {
 				$("#close-filters").mouseenter(function(e) {	
-					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 					$( "#ball" ).addClass("close-icon").append( '<i class="fa fa-times"></i>' );
 				});
@@ -2933,7 +2933,7 @@ Function Portfolio
 			if ($(window).width() > 1024) {
 				if (!$(".portfolio-wrap").hasClass("tooltip-caption")) {	
 					$(".item-image").mouseenter(function(e) {	
-						TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1, borderColor:'#fff'});
+						TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1, borderColor:'#000'});
 						TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 						$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-plus"></i>' );
 						$(this).parent().find('video').each(function() {
@@ -3323,7 +3323,7 @@ Function Sliders
 				var swiper = new Swiper(".content-slider", ContentSliderOptions);
 				
 				$(".slider-button-prev").mouseenter(function(e) {	
-					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 					$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-chevron-left"></i>' );
 				});
@@ -3336,7 +3336,7 @@ Function Sliders
 				});
 				
 				$(".slider-button-next").mouseenter(function(e) {	
-					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 					$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-chevron-right"></i>' );
 				});
@@ -3394,7 +3394,7 @@ Function Sliders
 				});
 				
 				$('.content-carousel').on('mouseenter mousemove', function() {	
-					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 					$("body" ).addClass("scale-drag-x");
 				});
 					
@@ -3455,7 +3455,7 @@ Function Sliders
 				});
 				
 				$('.content-looped-carousel').on('mouseenter mousemove', function() {	
-					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 					$("body" ).addClass("scale-drag-x");
 				});
 					
@@ -3503,7 +3503,7 @@ Function Sliders
 			if ($(window).width() > 1024) {
 				
 				$(".content-middle-carousel .swiper-slide img").mouseenter(function(e) {	
-					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1, borderColor:'#fff'});
+					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1, borderColor:'#000'});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 					$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-plus"></i>' );
 					$(this).parent().find('video').each(function() {
@@ -3570,7 +3570,7 @@ Function Lightbox
 		});
 		
 		$(".image-link").mouseenter(function(e) {	
-			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 			$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-plus"></i>' );
 		});
@@ -3639,7 +3639,7 @@ Function Page PlayVideo
 				if ($(this).hasClass("play")) {
 					$( "#ball" ).addClass("pause-movie")		
 				}
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 				$( "#ball" ).addClass("over-movie").append( '<i class="fa fa-play"></i><i class="fa fa-pause"></i>' );
 			});
 			
@@ -3654,7 +3654,7 @@ Function Page PlayVideo
 			});
 			
 			$(".video-wrapper .control").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#000',});
 			});
 			
 			var videocenter = ($(window).height() - $('.video-cover').height()) / 2
@@ -4371,7 +4371,7 @@ Function Contact Map
 							"saturation": 36
 						},
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 40
@@ -4386,7 +4386,7 @@ Function Contact Map
 							"visibility": "on"
 						},
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 16
@@ -4407,7 +4407,7 @@ Function Contact Map
 					"elementType": "geometry.fill",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 20
@@ -4419,7 +4419,7 @@ Function Contact Map
 					"elementType": "geometry.stroke",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 17
@@ -4434,7 +4434,7 @@ Function Contact Map
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 20
@@ -4446,7 +4446,7 @@ Function Contact Map
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 21
@@ -4458,7 +4458,7 @@ Function Contact Map
 					"elementType": "geometry.fill",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 17
@@ -4470,7 +4470,7 @@ Function Contact Map
 					"elementType": "geometry.stroke",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 29
@@ -4485,7 +4485,7 @@ Function Contact Map
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 18
@@ -4497,7 +4497,7 @@ Function Contact Map
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 16
@@ -4509,7 +4509,7 @@ Function Contact Map
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 19
@@ -4521,7 +4521,7 @@ Function Contact Map
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#fff"
 						},
 						{
 							"lightness": 17
@@ -4549,7 +4549,7 @@ Function Contact Map
 			var contentString = '<div id="content-map-marker" style="text-align:center; padding-top:10px; padding-left:10px">'+
 				'<div id="siteNotice">'+
 				'</div>'+
-				'<h4 id="firstHeading" class="firstHeading" style="color:#000!important; font-weight:600; margin-bottom:0px;">Hello Friend!</h4>'+
+				'<h4 id="firstHeading" class="firstHeading" style="color:#fff!important; font-weight:600; margin-bottom:0px;">Hello Friend!</h4>'+
 				'<div id="bodyContent">'+
 				'<p color:#999; font-size:14px; margin-bottom:10px">Here we are. Come to drink a coffee!</p>'+
 				'</div>'+

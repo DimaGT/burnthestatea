@@ -117,7 +117,7 @@
 		line-height:130px;
 		overflow:hidden;
 		padding: 0;
-		color:#000;		
+		color:#fff;		
 	}
 	
 	.text-align-center .hero-title, .text-align-center .next-hero-title {
@@ -137,11 +137,11 @@
 	}
 	
 	.light-content .hero-title, .light-content .next-hero-title {
-		color:#fff;		
+		color:#000;		
 	}
 	
 	.change-header .hero-title, .change-header .next-hero-title {
-		color:#000;		
+		color:#fff;		
 	}
 	
 	.hero-subtitle, .next-hero-subtitle {
@@ -184,11 +184,11 @@
 	}
 	
 	.light-content .hero-subtitle, .light-content .next-hero-subtitle {
-		color: #f33a3a;
+		color: #fff;
 	}
 	
 	.change-header .hero-subtitle, .change-header .next-hero-subtitle {
-		color: #f33a3a!important;
+		color: #fff!important;
 	}
 	
 	#hero.has-image .hero-subtitle:before, .text-align-center .hero-subtitle:before {
@@ -207,11 +207,11 @@
 		font-family: 'Instrument Serif', sans-serif;
 		font-size: 12px;
 		line-height:60px;
-		color:#000;
+		color:#fff;
 	}
 	
 	.light-content #hero-footer {
-		color:#fff;
+		color:#000;
 	}
 	
 	#hero-footer:after {
@@ -276,13 +276,13 @@
 	#page-nav {
 		height: auto;
 		width: 100%;
-		color: #000;
+		color: #fff;
 		position: relative;
 		margin-bottom: 0;
 	}
 	
 	.light-content #page-nav {
-		color: #fff;
+		color: #000;
 	}
 	
 	.next-page-wrap {
@@ -322,7 +322,7 @@
 		margin:0;
 		width:auto;
 		z-index:10;
-		color:#000;
+		color:#fff;
 		position:relative;
 		display:table;
 		-webkit-transition: all 0.2s ease-in-out;
@@ -334,7 +334,7 @@
 	}
 	
 	.light-content .page-title {
-		color:#fff;
+		color:#000;
 	}
 	
 	
@@ -348,7 +348,7 @@
 		-webkit-background-clip: text;
 		background-repeat: no-repeat;
 		transition: background-size .5s ease-in-out 0.1s;
-		background-image: linear-gradient(135deg, #fff 0%, #fff 50%, transparent 50.1%);
+		background-image: linear-gradient(135deg, #000 0%, #000 50%, transparent 50.1%);
   		background-size: 0% 100%;
 	}
 	
@@ -395,7 +395,7 @@
 	}
 	
 	.light-content .subtitle-info, .light-content .subtitle-name {
-		color: #fff;
+		color: #000;
 	}
 	
 /*--------------------------------------------------
@@ -434,7 +434,7 @@
 	}
 	
 	.temporary-hero .inner .caption-wrapper .title span {
-		color: #000;
+		color: #fff;
 		opacity: 1;
 		-webkit-transform: translateY(0px);
 		transform: translateY(0px);
@@ -444,13 +444,13 @@
 		position: relative;
 		display: block;
 		opacity: 1;
-		color: #000;
+		color: #fff;
 		transform: translateY(0px);
 		-webkit-transform: translateY(0px);
 	}
 	
 	.temporary-hero.light-content .inner .caption-wrapper .title span, .temporary-hero.light-content .inner .caption-wrapper .subtitle span {
-		color: #fff;
+		color: #000;
 	}
 	
 	.temporary-hero .inner .caption-wrapper .title div:first-child span:first-child::before {
