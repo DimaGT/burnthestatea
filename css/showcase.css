@@ -483,9 +483,9 @@
 	.split-title span {
 		position: relative;
 		display: block;
-		opacity:0;
-		transform: translateY(80px);
-		-webkit-transform: translateY(80px);
+		/* opacity:0; */
+		/* transform: translateY(80px); */
+		/* -webkit-transform: translateY(80px); */
 	}
 
 	.split-subtitle {

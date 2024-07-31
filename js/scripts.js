@@ -122,7 +122,6 @@ Function Page Load
 									}); 
 								}
 								
-								TweenMax.to($("#main"), 0, {opacity:1, delay:0, ease:Power2.easeOut});//modified time
 								if( $('#hero').hasClass("has-image")) {	
 									TweenMax.to($("#hero-bg-image, #hero-fg-image"), 1, {force3D:true, scale:1 , opacity:1, delay:0.2, ease:Power2.easeOut});
 									TweenMax.to($(".hero-title span"), 1, {force3D:true, y: 0, opacity:1, rotation:0, delay:0.6, ease:Power2.easeOut});
@@ -147,9 +146,9 @@ Function Page Load
 								
 								// Fading In Showcase elements on Finised
 								TweenMax.set($("#showcase-slider-holder"), {opacity:0});
-								TweenMax.set($("#showcase-slider-webgl-holder, #showcase-carousel-holder, #vp-portfolio-wrapper"), {opacity:0});
+								// TweenMax.set($("#showcase-slider-webgl-holder, #showcase-carousel-holder, #vp-portfolio-wrapper"), {opacity:0});
 								TweenMax.set($(".swiper-prev, .swiper-next, .swiper-pagination-bullet, .arrows-wrap, .carousel-allprojects-wrapper"), {opacity:0});								
-								TweenMax.to($("#showcase-slider-holder, #showcase-carousel-holder, #showcase-slider-webgl-holder, #vp-portfolio-wrapper"), 0.7, {opacity:1, delay:0.6, ease:Power2.easeOut});
+								// TweenMax.to($("#showcase-slider-holder, #showcase-carousel-holder, #showcase-slider-webgl-holder, #vp-portfolio-wrapper"), 0.7, {opacity:1, delay:0.6, ease:Power2.easeOut});
 								
 								TweenMax.to($("#showcase-slider-holder .swiper-slide .slide-title span"), 1, {force3D:true, y: 0, opacity:1, delay:0.8, ease:Power2.easeOut});
 								TweenMax.to($("#showcase-slider-holder .swiper-slide .subtitle span"), 0.7, {force3D:true, y: 0, opacity:1, delay:1.2, ease:Power2.easeOut});
@@ -192,9 +191,9 @@ Function Page Load
 								
 								TweenMax.to($(".showcase-list-intro span, .split-slider-intro span"), 1, {force3D:true, y:0, opacity:1, rotation:0, delay:0.3, ease:Power2.easeOut});
 								var SlideListTitle = new TimelineLite();					
-								$(".sl-title span, .split-title span").each(function(index, element) {
-									SlideListTitle.to(element, 0.7, {force3D:true, y:0, opacity:1, delay:0.5, ease:Power2.easeOut}, index * 0.05)
-								});
+								// $(".sl-title span, .split-title span").each(function(index, element) {
+								// 	SlideListTitle.to(element, 0.7, {force3D:true, y:0, opacity:1, delay:0.5, ease:Power2.easeOut}, index * 0.05)
+								// });
 								
 								var SlideListSubtitle = new TimelineLite();					
 								$(".sl-subtitle span, .split-subtitle span").each(function(index, element) {
@@ -1889,9 +1888,9 @@ Function Showcase Webgl Slider
 					
 					TweenMax.to($(".split-slider-intro span"), 0.5, {force3D:true, y:-30, opacity:0, delay:0, ease:Power2.easeInOut});
 					var SplitTitle = new TimelineLite();					
-					$(".split-title span").each(function(index, element) {
-						SplitTitle.to(element, 0.5, {force3D:true, y:-80, opacity:0, delay:0, ease:Power2.easeInOut}, index * 0.05)
-					});				
+					// $(".split-title span").each(function(index, element) {
+					// 	SplitTitle.to(element, 0.5, {force3D:true, y:-80, opacity:0, delay:0, ease:Power2.easeInOut}, index * 0.05)
+					// });				
 					var SplitSubtitle = new TimelineLite();					
 					$(".split-subtitle span").each(function(index, element) {
 						SplitSubtitle.to(element, 0.5, {force3D:true, y:-20, opacity:0, delay:0, ease:Power2.easeInOut}, index * 0.05)
